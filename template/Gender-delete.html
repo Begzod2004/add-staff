@@ -1,0 +1,6 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="pk" value={{Gender.id}}>
+    {{Gender.gender}} <br><br>
+    <input type="submit" value="Conform"> 
+</form>

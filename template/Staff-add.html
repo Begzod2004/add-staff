@@ -1,0 +1,26 @@
+<style>
+    .input[type=text], select {
+      width: 150px;
+      height: 30px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      box-sizing: border-box;
+      border-radius: 10px;
+    
+    }
+    .input1{
+        text-align: center;
+        width: 70px;
+        height: 30px;
+        border-radius: 30px;
+        color: white;
+        background-color: black;
+    }
+    
+    </style>
+      <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Create">
+      </form>
